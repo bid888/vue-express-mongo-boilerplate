@@ -1,24 +1,24 @@
-<template lang="pug">
-	table.table.stripped
-		thead
-			tr
-				th.selector(v-if="schema.multiSelect", width="20px" @click="selectAll") 
-					i.fa.fa-square-o
-				th.sortable(v-for="col in schema.columns", :width="col.width || 'auto'", @click="changeSort(col)", :class="{ sorted: col.field == order.field, 'desc': col.field == order.field && order.direction == -1 }") {{ col.title }}
-		
-		tbody
-			tr(v-for="row in filteredOrderedRows", @click="select($event, row)", :class="getRowClasses(row)")
-				td.selector(v-if="schema.multiSelect", width="20px", @click.stop.prevent="select($event, row, true)") 
-					i.fa.fa-square-o
-				td(v-for="col in schema.columns", :class="getCellClasses(row, col)") 
-					span(v-html="getCellValue(row, col)")
-					span.labels(v-if="col.labels != null")
-						.label(v-for="label in col.labels(row)", :class="'label-' + label.type") {{ label.caption }}
-		tfoot
-			tr
-				td
-				td(v-for="col in schema.columns") &nbsp;
-
+<template>
+	<table class="table stripped">
+		<thead>
+			<tr>
+				<th class="selector" v-if="schema.multiSelect" width="20px" @click="selectAll"> <i class="fa fa-square-o"></i></th>
+				<th class="sortable" v-for="col in schema.columns" :width="col.width || 'auto'" @click="changeSort(col)" :class="{ sorted: col.field == order.field, 'desc': col.field == order.field &amp;&amp; order.direction == -1 }">{{ col.title }}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr v-for="row in filteredOrderedRows" @click="select($event, row)" :class="getRowClasses(row)">
+				<td class="selector" v-if="schema.multiSelect" width="20px" @click.stop.prevent="select($event, row, true)"> <i class="fa fa-square-o"></i></td>
+				<td v-for="col in schema.columns" :class="getCellClasses(row, col)"> <span v-html="getCellValue(row, col)"></span><span class="labels" v-if="col.labels != null"><div class="label" v-for="label in col.labels(row)" :class="'label-' + label.type">{{ label.caption }}</div></span></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td v-for="col in schema.columns">&nbsp;</td>
+			</tr>
+		</tfoot>
+	</table>
 </template>
 
 <script>
