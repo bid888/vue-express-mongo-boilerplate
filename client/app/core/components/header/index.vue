@@ -49,8 +49,4 @@
 	.navbar {
 		margin-bottom: 20px;
 	}
-
-	.container {
-		padding: 0 !important;
-	}
 </style>
