@@ -47,9 +47,9 @@
 </script>
 
 <style lang="scss" scoped>
-
-	@import "../../../scss/themes/blurred/variables";
-	@import "../../../scss/common/mixins";
+	/*
+	//@import "../../../scss/themes/blurred/variables";
+	//@import "../../../scss/common/mixins";
 
 	.container {
 		padding: 1rem;
@@ -117,6 +117,6 @@
 			
 		} // .details
 
-	} // .profile
+	} // .profile */
 
 </style>

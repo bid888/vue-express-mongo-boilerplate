@@ -1,5 +1,5 @@
 <template>
-	<div class="messages-dropdown" :class="{ 'visible': visible }">
+	<div class="messages-dropdown dropdown-menu" :class="{ 'visible': visible }">
 		<div class="panel">
 			<div class="header">
 				<div class="left">{{ "Messages" | i18n }}</div>

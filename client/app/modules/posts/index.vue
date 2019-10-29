@@ -257,9 +257,9 @@
 </script>
 
 <style lang="scss" scoped>
-
-	@import "../../../scss/themes/blurred/variables";
-	@import "../../../scss/common/mixins";
+	/*
+	//@import "../../../scss/themes/blurred/variables";
+	//@import "../../../scss/common/mixins";
 
 	.container {
 		padding-bottom: 1rem;
@@ -271,7 +271,7 @@
 
 	.postForm {
 
-		@include bgTranslucentDark(0.2);
+		//@include bgTranslucentDark(0.2);
 
 		margin: 1rem;
 
@@ -367,9 +367,9 @@
 		position: absolute !important;
 	}
 */
-	.post-move {
+	/* .post-move {
 		transition: transform .5s cubic-bezier(.55,0,.1,1);
-	}
+	} */
 
 
 

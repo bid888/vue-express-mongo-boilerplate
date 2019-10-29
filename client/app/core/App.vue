@@ -1,10 +1,10 @@
 <template>
-	<div>
-		<page-header :toggle-sidebar="toggleSidebar"></page-header>
-		<sidebar :minimized="miniSidebar"></sidebar>
-		<section class="app-main" :class="{ miniSidebar: miniSidebar }">
+	<div class="bg-light text-dark">
+		<page-header :toggle-sidebar="toggleSidebar"></page-header>		
+		<section class="container bg-white" :class="{ miniSidebar: miniSidebar }">
 			<router-view keep-alive="keep-alive"></router-view>
 		</section>
+		<sidebar :minimized="miniSidebar"></sidebar>
 	</div>
 </template>
 
@@ -138,6 +138,9 @@
 </script>
 
 <style lang="scss">
-	@import "../../scss/style.scss";
+	//@import "../../scss/style.scss";
 
+	svg {
+		margin-right:10px;
+	}
 </style>

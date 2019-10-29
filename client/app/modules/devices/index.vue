@@ -1,5 +1,5 @@
-<template lang="pug">
-	admin-page(:schema="schema", :selected="selected", :rows="devices")
+<template>
+	<admin-page :schema="schema" :selected="selected" :rows="devices"></admin-page>
 </template>
 
 <script>

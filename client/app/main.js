@@ -15,6 +15,13 @@ import VueWebsocket from "vue-websocket";
 import store from "./core/store";
 import App from "./core/App";
 
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
+
 Vue.use(Filters);
 
 Vue.use(VueFormGenerator);

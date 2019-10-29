@@ -1,19 +1,16 @@
 <template>
-	<ul class="dropdown-menu user-menu" :class="{ 'visible': visible }">
+	<div class="dropdown-menu user-menu" :class="{ 'visible': visible }">
 		<router-link tag="li" to="/profile">
-			<a>
-				<div class="icon"><i class="fa fa-user"></i></div>{{ "MyAccount" | i18n }}</a>
+			<a class="dropdown-item"><span class="icon"><i class="fa fa-user"></i></span>{{ "My Account" | i18n }}</a>
 		</router-link>
 		<router-link tag="li" to="/settings">
-			<a>
-				<div class="icon"><i class="fa fa-cog"></i></div>{{ "Settings" | i18n }}</a>
+			<a class="dropdown-item"><span class="icon"><i class="fa fa-cog"></i></span>{{ "Settings" | i18n }}</a>
 		</router-link>
-		<li class="separator"></li>
+		<div class="dropdown-divider"></div>
 		<li>
-			<a href="/logout">
-				<div class="icon"><i class="fa fa-power-off"></i></div>{{ "Logout" | i18n }}</a>
+			<a class="dropdown-item" href="/logout"><span class="icon"><i class="fa fa-power-off"></i></span>{{ "Logout" | i18n }}</a>
 		</li>
-	</ul>	
+	</div>	
 </template>
 
 <script>

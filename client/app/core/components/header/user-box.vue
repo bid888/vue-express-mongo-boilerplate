@@ -1,9 +1,30 @@
 <template>
-	<div class="user-box" v-if="me">
-		<div class="user-info right" @click="toggleUserMenu()"><img class="avatar" :src="me.avatar" />
-			<div class="username">{{ me.fullName }}</div><i class="fa fa-chevron-down"></i></div>
-		<user-dropdown :visible="expandedUserMenu"></user-dropdown>
-		<div class="notification-box right">
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+			<li :class=" { active: notifications.length &gt; 0 }" class="nav-item dropdown" v-if="me">
+				<a class="user-info right nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" @click="toggleNotifications()">
+					<i class="fas fa-bell"></i><span>{{ notifications.length }}</span>
+				</a>
+				<notifications-dropdown></notifications-dropdown>
+			</li>
+			
+			<li :class=" { active: messages.length &gt; 0 }" class="nav-item dropdown" v-if="me">
+				<a class="user-info right nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" @click="toggleMessages()">
+					<i class="fas fa-envelope"></i><span>{{ messages.length }}</span>
+				</a>
+				<messages-dropdown></messages-dropdown>
+			</li>
+			<li class="nav-item dropdown" v-if="me">
+				<a class="user-info right nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" @click="toggleUserMenu()">
+					<img width="30" height="30" class="avatar d-inline-block align-top" :src="me.avatar" />
+					{{ me.fullName }}
+				</a>
+				<user-dropdown></user-dropdown>
+			</li>
+		</ul>
+	</div>
+
+	<!-- <div class="notification-box right">
 			<ul class="icons">
 				<li @click="toggleNotifications()" :class=" { active: notifications.length &gt; 0 }"><i class="fa fa-bell-o"></i><span>{{ notifications.length }}</span>
 					<div class="ring"></div>
@@ -14,8 +35,7 @@
 			</ul>
 			<notifications-dropdown :visible="expandedNotifications"></notifications-dropdown>
 			<messages-dropdown :visible="expandedMessages"></messages-dropdown>
-		</div>
-	</div>
+		</div> -->
 </template>
 
 <script>
