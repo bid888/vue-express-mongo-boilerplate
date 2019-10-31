@@ -1,19 +1,54 @@
 <template>
 	<div class="container">
-		<h1>Style guide</h1>
-		<section>
-			<h2 class="display-4">Typography</h2>
-			<div class="headers">
-				<h1>h1. Bootstrap heading</h1>
-				<h2>h2. Bootstrap heading</h2>
-				<h3>h3. Bootstrap heading</h3>
-				<h4>h4. Bootstrap heading</h4>
-				<h5>h5. Bootstrap heading</h5>
-				<h6>h6. Bootstrap heading</h6>
+		<div class="row">
+			<div class="col">		
+				<h2 class="py-4">Typography</h2>
+				<table class="table">
+					<tbody>
+						<tr>
+						<td>
+							<p><code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code></p>
+						</td>
+						<td><span class="h1">h1. Bootstrap heading</span></td>
+						</tr>
+						<tr>
+						<td>
+							<p><code class="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt;</code></p>
+						</td>
+						<td><span class="h2">h2. Bootstrap heading</span></td>
+						</tr>
+						<tr>
+						<td>
+							<p><code class="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt;</code></p>
+						</td>
+						<td><span class="h3">h3. Bootstrap heading</span></td>
+						</tr>
+						<tr>
+						<td>
+							<p><code class="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt;</code></p>
+						</td>
+						<td><span class="h4">h4. Bootstrap heading</span></td>
+						</tr>
+						<tr>
+						<td>
+							<p><code class="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt;</code></p>
+						</td>
+						<td><span class="h5">h5. Bootstrap heading</span></td>
+						</tr>
+						<tr>
+						<td>
+							<p><code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code></p>
+						</td>
+						<td><span class="h6">h6. Bootstrap heading</span></td>
+						</tr>
+					</tbody>
+					</table>
 			</div>
-			<hr/>
-			<div class="paragraph">
-				<p>Paragraph</p>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h2 class="py-3">Paragraph</h2>
 				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 éáűőúöüóí ÉÁŰŐÚÖÜÓÍ</p>
 				<p>An example paragraph with <strong>strong text</strong> and <em>emphasized text</em>, spanning <br/>multiple lines so you can see the line-height.</p>
 				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius ipsum tortor, eget convallis ante sagittis ac. Nulla eget bibendum dolor. Praesent at ipsum bibendum, malesuada quam tincidunt, lobortis purus. Donec vel mi mollis,
@@ -21,133 +56,242 @@
 					non libero luctus, suscipit libero ut, elementum enim. <a class="link" href="#">Read more</a></p>
 				<p>Fusce aliquam sem lorem, in porttitor orci dignissim at. Sed non dolor at orci dignissim bibendum a non nibh. Duis nec vestibulum dui, sit amet lobortis ligula. Sed aliquam mauris nunc, eu sodales est faucibus vitae. Ut sed accumsan
 					lectus. Interdum et <a class="link" href="#">malesuada</a> fames ac ante ipsum primis in faucibus. Aenean dignissim odio vehicula ligula varius, ac ullamcorper tortor molestie. Phasellus dolor dui, egestas id ornare in, suscipit
-					et dolor.</p>
+					et dolor.</p>	
 			</div>
-		</section>
-		<section>
-			<h2>Buttons</h2>
-			<fieldset>
-				<legend>Normal buttons</legend>
-					<button type="button" class="btn btn-primary">Primary</button>
-					<button type="button" class="btn btn-secondary">Secondary</button>
-					<button type="button" class="btn btn-success">Success</button>
-					<button type="button" class="btn btn-danger">Danger</button>
-					<button type="button" class="btn btn-warning">Warning</button>
-					<button type="button" class="btn btn-info">Info</button>
-					<button type="button" class="btn btn-light">Light</button>
-					<button type="button" class="btn btn-dark">Dark</button>
-			</fieldset>
-			<fieldset>
-				<legend>Large buttons</legend>
-				<button type="button" class="btn btn-primary btn-lg">Primary</button>
-				<button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-				<button type="button" class="btn btn-success btn-lg">Success</button>
-				<button type="button" class="btn btn-danger btn-lg">Danger</button>
-				<button type="button" class="btn btn-warning btn-lg">Warning</button>
-				<button type="button" class="btn btn-info btn-lg">Info</button>
-				<button type="button" class="btn btn-light btn-lg">Light</button>
-				<button type="button" class="btn btn-dark btn-lg">Dark</button>	
-			</fieldset>
-			<fieldset>
-				<legend>Small buttons</legend>
-				<button type="button" class="btn btn-primary btn-sm">Primary</button>
-				<button type="button" class="btn btn-secondary btn-sm">Secondary</button>
-				<button type="button" class="btn btn-success btn-sm">Success</button>
-				<button type="button" class="btn btn-danger btn-sm">Danger</button>
-				<button type="button" class="btn btn-warning btn-sm">Warning</button>
-				<button type="button" class="btn btn-info btn-sm">Info</button>
-				<button type="button" class="btn btn-light btn-sm">Light</button>
-				<button type="button" class="btn btn-dark btn-sm">Dark</button>	
-			</fieldset>
-			<fieldset>
-				<legend>Disabled buttons</legend>
-				<button type="button" class="btn btn-primary btn-sm" disabled>Primary</button>
-				<button type="button" class="btn btn-secondary btn-sm" disabled>Secondary</button>
-				<button type="button" class="btn btn-success btn-sm" disabled>Success</button>
-				<button type="button" class="btn btn-danger btn-sm" disabled>Danger</button>
-				<button type="button" class="btn btn-warning btn-sm" disabled>Warning</button>
-				<button type="button" class="btn btn-info btn-sm" disabled>Info</button>
-				<button type="button" class="btn btn-light btn-sm" disabled>Light</button>
-				<button type="button" class="btn btn-dark btn-sm" disabled>Dark</button>	
-			</fieldset>
-			<fieldset>
-				<legend>Icon buttons</legend>
-				<button class="btn btn-danger"><i class="fas fas fa-trash-alt fa-lg"></i>Delete</button>
-				<button class="btn btn-success"><i class="fas fas fa-pencil-alt fa-lg"></i>Edit</button>
-				<button class="btn btn-primary"><i class="fas fa-home fa-lg"></i>Home</button>
-				<button class="btn btn-info"><i class="fas fa-tasks fa-lg"></i>Taks</button>
-				<button class="btn btn-light"><i class="fas fa-comments fa-lg"></i>Chat</button>
-			</fieldset>
-			<fieldset>
-				<legend>Floating buttons</legend>
-				<div class="content flex align-center justify-space-around buttons"><button class="button fab"><i class="icon fa fa-plus"></i>Normal</button><button class="button fab large primary"> <i class="icon fa fa-plus"></i>Primary</button><button class="button fab success"><i class="icon fa fa-check"></i>Success</button>
-					<button
-						class="button fab warning" disabled="disabled"><i class="icon fa fa-comments"></i>Warning</button><button class="button fab danger"><i class="icon fa fa-trash"></i>Danger</button><button class="button fab outline"><i class="icon fa fa-bars"></i>Outline				</button></div>
-			</fieldset>
-			<fieldset>
-				<legend>Button group</legend>
-				<div class="content flex align-center justify-space-around buttons">
-					<div class="button-group"><button class="button"> <i class="icon fa fa-align-left"></i>Left</button><button class="button"><i class="icon fa fa-align-center"></i>Middle</button><button class="button"><i class="icon fa fa-align-right"></i>Right</button></div>
-				</div>
-			</fieldset>
-			<hr/>
-		</section>
-		<section>
-			<h2><span class="number">4.</span><span class="text">Form elements</span></h2>
-			<div class="content forms">
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<h2 class="py-3">Buttons</h2>
+				<fieldset>
+						<legend>Normal buttons</legend>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-light">Light</button>
+						<button type="button" class="btn btn-dark">Dark</button>
+
+						<button class="btn btn-primary">
+							<span class="spinner-border spinner-border-sm"></span>
+						</button>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<fieldset>
+					<legend>Large buttons</legend>
+					<button type="button" class="btn btn-primary btn-lg">Primary</button>
+					<button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+					<button type="button" class="btn btn-success btn-lg">Success</button>
+					<button type="button" class="btn btn-danger btn-lg">Danger</button>
+					<button type="button" class="btn btn-warning btn-lg">Warning</button>
+					<button type="button" class="btn btn-info btn-lg">Info</button>
+					<button type="button" class="btn btn-light btn-lg">Light</button>
+					<button type="button" class="btn btn-dark btn-lg">Dark</button>	
+
+					<button class="btn btn-primary btn-lg">
+						<span class="spinner-border spinner-border-sm"></span>
+					</button>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<fieldset>
+					<legend>Small buttons</legend>
+					<button type="button" class="btn btn-primary btn-sm">Primary</button>
+					<button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+					<button type="button" class="btn btn-success btn-sm">Success</button>
+					<button type="button" class="btn btn-danger btn-sm">Danger</button>
+					<button type="button" class="btn btn-warning btn-sm">Warning</button>
+					<button type="button" class="btn btn-info btn-sm">Info</button>
+					<button type="button" class="btn btn-light btn-sm">Light</button>
+					<button type="button" class="btn btn-dark btn-sm">Dark</button>	
+
+					<button class="btn btn-primary btn-sm">
+						<span class="spinner-border spinner-border-sm"></span>
+					</button>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<fieldset>
+					<legend>Disabled buttons</legend>
+					<button type="button" class="btn btn-primary btn" disabled>Primary</button>
+					<button type="button" class="btn btn-secondary btn" disabled>Secondary</button>
+					<button type="button" class="btn btn-success btn" disabled>Success</button>
+					<button type="button" class="btn btn-danger btn" disabled>Danger</button>
+					<button type="button" class="btn btn-warning btn" disabled>Warning</button>
+					<button type="button" class="btn btn-info btn" disabled>Info</button>
+					<button type="button" class="btn btn-light btn" disabled>Light</button>
+					<button type="button" class="btn btn-dark btn" disabled>Dark</button>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<fieldset>
+					<legend>Icon buttons</legend>
+					<button class="btn btn-danger"><i class="fas fas fa-trash-alt fa-lg"></i> Delete</button>
+					<button class="btn btn-success"><i class="fas fas fa-pencil-alt fa-lg"></i> Edit</button>
+					<button class="btn btn-primary"><i class="fas fa-home fa-lg"></i> Home</button>
+					<button class="btn btn-info"><i class="fas fa-tasks fa-lg"></i> Tasks</button>
+					<button class="btn btn-light"><i class="fas fa-comments fa-lg"></i> Chat</button>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<fieldset>
+					<legend>Floating buttons</legend>
+						<button class="btn btn-success" style="border-radius:50%"><i class="fas fa-plus"></i></button>
+						<button class="btn btn-danger" style="border-radius:50%"><i class="fas fa-trash"></i></button>
+						<button class="btn btn-info" style="border-radius:50%"><i class="fas fa-bars"></i></button>
+						<button	class="btn btn-primary" style="border-radius:50%" disabled><i class="fas fa-comment"></i></button>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<h2 class="py-3">Form elements</h2>
 				<form action="#">
 					<fieldset>
 						<legend>Input fields</legend>
-						<div class="form-group"><label for="text1">Label</label><input class="form-control" id="text1" type="text" placeholder="Placeholder" /></div>
-						<div class="form-group"><label for="text2">Label with hint</label><input class="form-control" id="text2" type="text" placeholder="Placeholder" />
-							<div class="hint">Maxium 100 characters</div>
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Email address</label>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 						</div>
-						<div class="form-group has-icon valid"><label for="text3">Label for valid input</label><input class="form-control" id="text3" type="text" placeholder="Placeholder" /><i class="icon fa fa-check"></i></div>
-						<div class="form-group has-icon error"><label for="text4">Label for invalid input with error messages</label><input class="form-control" id="text4" type="text" placeholder="Placeholder" /><i class="icon fa fa-exclamation-triangle"></i>
-							<div class="errors"><span>Too short!</span><span>Invalid text content!</span></div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Example textarea</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 						</div>
-						<div class="form-group"><label for="text5">Label for textarea</label><textarea class="form-control" id="text5" type="text" placeholder="Placeholder" rows="5"></textarea></div>
 					</fieldset>
 					<fieldset>
 						<legend>Selections</legend>
-						<div class="form-group"><label for="select1">Label for select</label><select class="form-control" id="select1"><option>Option 1</option><option>Option 2</option><option>Option 3 </option><option>Option 4</option></select></div>
-					</fieldset>
-					<fieldset>
-						<legend>Radio buttons</legend>
-						<div class="form-option"><input id="radio1" type="radio" name="radio" /><label for="radio1">Option one</label></div>
-						<div class="form-option"><input id="radio2" type="radio" name="radio" /><label for="radio2">Option two</label></div>
-					</fieldset>
-					<fieldset>
-						<legend>Checkboxes</legend>
-						<div class="form-option"><input id="check1" type="checkbox" /><label for="check1">Option one</label></div>
-						<div class="form-option"><input id="check2" type="checkbox" /><label for="check2">Option two</label></div>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Example select</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlSelect2">Example multiple select</label>
+							<select multiple class="form-control" id="exampleFormControlSelect2">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							</select>
+						</div>
+						<div>
+							<label for="inputPassword5">Password</label>
+							<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+							<small id="passwordHelpBlock" class="form-text text-muted">
+							Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+							</small>
+						</div>
 					</fieldset>
 				</form>
 			</div>
-		</section>
-		<section>
-			<h2><span class="number">5.</span><span class="text">Alerts</span></h2>
-			<div class="content alerts">
-				<div class="alert"> <i class="icon fa fa-info-circle"></i>This is a neutral alert. </div>
-				<div class="alert alert-success"><i class="icon fa fa-check"></i>This is a success alert.<a class="alert-close" href="x">&times;</a></div>
-				<div class="alert alert-warning"><i class="icon fa fa-exclamation-triangle"></i>This is a warning alert.<a class="alert-close" href="x">&times;				</a></div>
-				<div class="alert alert-error"><i class="icon fa fa-times-circle"></i><strong>Error!</strong>This is an error alert.<a class="alert-close" href="x">&times;		</a></div>
-				<div class="alert alert-success">
-					<h4>Well done!</h4>
-					<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-				</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<form action="#">
+					<fieldset>
+						<legend>Radio buttons</legend>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+								Default radio
+							</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+								<label class="form-check-label" for="exampleRadios2">
+									Second default radio
+								</label>
+							</div>
+							<div class="form-check disabled">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+								<label class="form-check-label" for="exampleRadios3">
+									Disabled radio
+							</label>
+						</div>
+					</fieldset>
+					<fieldset class="my-2">
+						<legend>Checkboxes</legend>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck1">
+									Default checkbox
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+								<label class="form-check-label" for="defaultCheck2">
+									Disabled checkbox
+							</label>
+						</div>
+					</fieldset>
+				</form>
 			</div>
-		</section>
-		<section>
-			<h2><span class="number">6.</span><span class="text">Tables</span></h2>
-			<div class="content tables">
-				<table class="table stripped bordered">
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<h4 class="py-1">Validation</h4>
+				<form action="" class="was-validated">
+					<div class="form-group">
+						<label for="uname">Username:</label>
+						<input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+						<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password:</label>
+						<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+						<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Please fill out this field.</div>
+					</div>
+					<div class="form-group form-check">
+						<label class="form-check-label">
+						<input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+						<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Check this checkbox to continue.</div>
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<h2 class="py-3">Tables</h2>
+				<table class="table">
 					<thead>
 						<tr>
 							<th>#</th>
 							<th class="sortable">Name</th>
-							<th class="sortable"> <i class="fa fa-envelope"></i>Mail</th>
-							<th class="sortable"> <i class="fa fa-phone"></i>Phone</th>
+							<th class="sortable"> <i class="fa fa-envelope"></i> Mail</th>
+							<th class="sortable"> <i class="fa fa-phone"></i> Phone</th>
 							<th class="sortable text-right">Outstanding</th>
 							<th class="text-right">Functions</th>
 						</tr>
@@ -159,7 +303,10 @@
 							<td>info@johnnyavlony.com</td>
 							<td>(740) 841-7566</td>
 							<td class="text-right">$2,400.00</td>
-							<td class="text-right"><button class="button small">Edit</button><button class="button small danger"> <i class="icon fa fa-trash"></i>Delete</button></td>
+							<td class="text-right">
+								<button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+            					<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+							</td>
 						</tr>
 						<tr>
 							<td>2</td>
@@ -167,7 +314,10 @@
 							<td>info@johnnyavlony.com</td>
 							<td>(740) 841-7566</td>
 							<td class="text-right">$2,400.00</td>
-							<td class="text-right"><button class="button small">Edit</button><button class="button small danger"> <i class="icon fa fa-trash"></i>Delete</button></td>
+							<td class="text-right">
+								<button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+            					<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+							</td>
 						</tr>
 						<tr class="selected">
 							<td>3</td>
@@ -175,7 +325,10 @@
 							<td>info@johnnyavlony.com</td>
 							<td>(740) 841-7566</td>
 							<td class="text-right">$2,400.00</td>
-							<td class="text-right"><button class="button small">Edit</button><button class="button small danger"> <i class="icon fa fa-trash"></i>Delete</button></td>
+							<td class="text-right">
+								<button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+            					<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+							</td>
 						</tr>
 						<tr class="inactive">
 							<td>4</td>
@@ -183,12 +336,15 @@
 							<td>info@johnnyavlony.com</td>
 							<td>(740) 841-7566</td>
 							<td class="text-right">$2,400.00</td>
-							<td class="text-right"><button class="button small">Edit</button><button class="button small danger"> <i class="icon fa fa-trash"></i>Delete</button></td>
+							<td class="text-right">
+								<button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+            					<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+							</td>
 						</tr>
 					</tbody>
 					<tfoot>
 						<tr>
-							<td>4</td>
+							<td></td>
 							<td> </td>
 							<td> </td>
 							<td> </td>
@@ -198,102 +354,113 @@
 					</tfoot>
 				</table>
 			</div>
-		</section>
-		<section>
-			<h2><span class="number">7.</span><span class="text">Tags / badges</span></h2>
-			<fieldset>
-				<legend>Tags</legend>
-				<div class="content flex align-center justify-space-around buttons">
-					<div class="tag">Normal</div>
-					<div class="tag primary">Primary</div>
-					<div class="tag success">Success</div>
-					<div class="tag warning">Warning</div>
-					<div class="tag danger">Danger</div>
-					<div class="tag outline">Outline</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<h2 class="py-1">Tags / Badges</h2>
+				<span class="badge badge-pill badge-primary">Primary</span>
+				<span class="badge badge-pill badge-secondary">Secondary</span>
+				<span class="badge badge-pill badge-success">Success</span>
+				<span class="badge badge-pill badge-danger">Danger</span>
+				<span class="badge badge-pill badge-warning">Warning</span>
+				<span class="badge badge-pill badge-info">Info</span>
+				<span class="badge badge-pill badge-light">Light</span>
+				<span class="badge badge-pill badge-dark">Dark</span>
+
+				<div class="my-2">
+					<a href="#" class="badge badge-primary">Primary</a>
+					<a href="#" class="badge badge-secondary">Secondary</a>
+					<a href="#" class="badge badge-success">Success</a>
+					<a href="#" class="badge badge-danger">Danger</a>
+					<a href="#" class="badge badge-warning">Warning</a>
+					<a href="#" class="badge badge-info">Info</a>
+					<a href="#" class="badge badge-light">Light</a>
+					<a href="#" class="badge badge-dark">Dark</a>
 				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Number tags</legend>
-				<div class="content flex align-center justify-space-around buttons">
-					<div class="tag pill">15</div>
-					<div class="tag pill primary">5</div>
-					<div class="tag pill success">100+</div>
-					<div class="tag pill warning">45</div>
-					<div class="tag pill danger">0</div>
-					<div class="tag pill outline">8</div>
-				</div>
-			</fieldset>
-		</section>
-		<section>
-			<h2><span class="number">8.</span><span class="text">Progress bars</span></h2>
-			<fieldset>
-				<legend>Normal</legend>
-				<div class="content buttons">
-					<div class="progressbar">
-						<div class="progress" style="width: 15%;"></div>
-					</div><br/>
-					<div class="progressbar success">
-						<div class="progress" style="width: 40%;">40% complete...</div>
-					</div><br/>
-					<div class="progressbar warning">
-						<div class="progress" style="width: 60%;">60%</div>
-					</div><br/>
-					<div class="progressbar danger">
-						<div class="progress" style="width: 70%;"></div>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<h2 class="py-1">Progress bars</h2>
+				<fieldset>
+					<legend>Normal</legend>
+					<div class="my-2 progress">
+						<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Stripped</legend>
-				<div class="content buttons">
-					<div class="progressbar stripped success">
-						<div class="progress" style="width: 40%;">40% complete...</div>
-					</div><br/>
-					<div class="progressbar stripped danger">
-						<div class="progress" style="width: 70%;"></div>
+					<div class="my-2 progress">
+						<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Animated</legend>
-				<div class="content buttons">
-					<div class="progressbar stripped animate success">
-						<div class="progress" style="width: 80%;">80% complete...</div>
-					</div><br/>
-					<div class="progressbar stripped animate warning">
-						<div class="progress" style="width: 34%;"></div>
+					<div class="my-2 progress">
+						<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Small</legend>
-				<div class="content buttons">
-					<div class="progressbar small">
-						<div class="progress" style="width: 15%;"></div>
-					</div><br/>
-					<div class="progressbar small success stripped">
-						<div class="progress" style="width: 40%;">40% complete...</div>
-					</div><br/>
-					<div class="progressbar small warning stripped animate">
-						<div class="progress" style="width: 60%;">60%</div>
+					<div class="my-2 progress">
+						<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Large</legend>
-				<div class="content buttons">
-					<div class="progressbar large">
-						<div class="progress" style="width: 15%;"></div>
-					</div><br/>
-					<div class="progressbar large success stripped">
-						<div class="progress" style="width: 40%;">40% complete...</div>
-					</div><br/>
-					<div class="progressbar large warning stripped animate">
-						<div class="progress" style="width: 60%;">60%</div>
+				</fieldset>
+				<fieldset>
+					<legend>Stripped</legend>
+					<div class="my-2 progress">
+						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-				</div>
-			</fieldset>
-		</section>
+					<div class="my-2 progress">
+						<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="my-2 progress">
+						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="my-2 progress">
+						<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="my-2 progress">
+						<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Animated</legend>
+					<div class="my-2 progress">
+  						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Small</legend>
+					<div class="content buttons">
+						<div class="progressbar small">
+							<div class="progress" style="width: 15%;"></div>
+						</div><br/>
+						<div class="progressbar small success stripped">
+							<div class="progress" style="width: 40%;">40% complete...</div>
+						</div><br/>
+						<div class="progressbar small warning stripped animate">
+							<div class="progress" style="width: 60%;">60%</div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Large</legend>
+					<div class="content buttons">
+						<div class="progressbar large">
+							<div class="progress" style="width: 15%;"></div>
+						</div><br/>
+						<div class="progressbar large success stripped">
+							<div class="progress" style="width: 40%;">40% complete...</div>
+						</div><br/>
+						<div class="progressbar large warning stripped animate">
+							<div class="progress" style="width: 60%;">60%</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row py-2">
+			<div class="col">
+				<h2 class="py-1">Panels & Cards</h2>
+				
+			</div>
+		</div>
+		
 		<section>
 			<h2><span class="number">9.</span><span class="text">Panels & Cards</span></h2>
 			<fieldset>

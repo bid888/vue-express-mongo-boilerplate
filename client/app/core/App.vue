@@ -1,7 +1,7 @@
 <template>
-	<div class="bg-light text-dark">
-		<page-header :toggle-sidebar="toggleSidebar"></page-header>		
-		<section class="container bg-white" :class="{ miniSidebar: miniSidebar }">
+	<div class="bg-light">
+		<page-header></page-header>	
+		<section class="container bg-white">
 			<router-view keep-alive="keep-alive"></router-view>
 		</section>
 		<sidebar :minimized="miniSidebar"></sidebar>
@@ -141,6 +141,6 @@
 	//@import "../../scss/style.scss";
 
 	svg {
-		margin-right:10px;
+		//margin-right:10px;
 	}
 </style>
