@@ -138,9 +138,4 @@
 </script>
 
 <style lang="scss">
-	//@import "../../scss/style.scss";
-
-	svg {
-		//margin-right:10px;
-	}
 </style>

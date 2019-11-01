@@ -45,7 +45,6 @@
 					</table>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col">
 				<h2 class="py-3">Paragraph</h2>
@@ -59,7 +58,6 @@
 					et dolor.</p>	
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<h2 class="py-3">Buttons</h2>
@@ -80,7 +78,6 @@
 				</fieldset>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<fieldset>
@@ -100,7 +97,6 @@
 				</fieldset>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<fieldset>
@@ -120,7 +116,6 @@
 				</fieldset>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<fieldset>
@@ -136,7 +131,6 @@
 				</fieldset>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<fieldset>
@@ -149,7 +143,6 @@
 				</fieldset>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<fieldset>
@@ -161,7 +154,6 @@
 				</fieldset>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<h2 class="py-3">Form elements</h2>
@@ -210,7 +202,6 @@
 				</form>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<form action="#">
@@ -253,7 +244,6 @@
 				</form>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<h4 class="py-1">Validation</h4>
@@ -281,7 +271,6 @@
 				</form>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<h2 class="py-3">Tables</h2>
@@ -380,7 +369,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
 				<h2 class="py-1">Progress bars</h2>
@@ -423,447 +411,100 @@
   						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 					</div>
 				</fieldset>
-				<fieldset>
-					<legend>Small</legend>
-					<div class="content buttons">
-						<div class="progressbar small">
-							<div class="progress" style="width: 15%;"></div>
-						</div><br/>
-						<div class="progressbar small success stripped">
-							<div class="progress" style="width: 40%;">40% complete...</div>
-						</div><br/>
-						<div class="progressbar small warning stripped animate">
-							<div class="progress" style="width: 60%;">60%</div>
-						</div>
-					</div>
-				</fieldset>
-				<fieldset>
-					<legend>Large</legend>
-					<div class="content buttons">
-						<div class="progressbar large">
-							<div class="progress" style="width: 15%;"></div>
-						</div><br/>
-						<div class="progressbar large success stripped">
-							<div class="progress" style="width: 40%;">40% complete...</div>
-						</div><br/>
-						<div class="progressbar large warning stripped animate">
-							<div class="progress" style="width: 60%;">60%</div>
-						</div>
-					</div>
-				</fieldset>
 			</div>
 		</div>
-
 		<div class="row py-2">
 			<div class="col">
-				<h2 class="py-1">Panels & Cards</h2>
-				
-			</div>
-		</div>
-		
-		<section>
-			<h2><span class="number">9.</span><span class="text">Panels & Cards</span></h2>
-			<fieldset>
-				<legend>Normal Panels</legend>
-				<div class="content flex align-center justify-space-around panels">
-					<div class="panel">
-						<div class="header">Panel normal</div>
-						<div class="body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.</p>
-						</div>
-					</div>
-					<div class="panel primary">
-						<div class="ribbon right red"> <span>Primary</span></div>
-						<div class="header">Panel primary</div>
-						<div class="body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.</p>
-						</div>
-					</div>
-					<div class="panel success" style="height: 332px;">
-						<div class="header">Panel success with list</div>
-						<div class="body">
-							<div class="list">
-								<div class="item"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" />
-									<div class="body"><strong>Message title <small class="text-muted">John Doe</small></strong>
-										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eligendi mollitia ratione fugiat earum qui sit vero nisi pariatur eaque quasi reprehenderit possimus consequatur commodi cum quod, amet sed cupiditate?</p>
-									</div>
-									<div class="footer text-right"><small class="text-muted">1 min ago</small></div>
+				<h2 class="py-1">Cards</h2>
+				<fieldset>
+					<div class="row py-2">
+						<div class="col">
+							<div class="card">
+								<div class="card-header">
+									Featured
 								</div>
-								<div class="item"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" />
-									<div class="body"><strong>Message title <small class="text-muted">John Doe</small></strong>
-										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eligendi mollitia ratione fugiat earum qui sit vero nisi pariatur eaque quasi reprehenderit possimus consequatur commodi cum quod, amet sed cupiditate?
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perferendis sapiente non atque qui quis pariatur impedit ea cupiditate culpa repellat voluptate, ipsam id illo incidunt nam commodi optio? Quasi.</p>
-									</div>
-									<div class="footer text-right"><small class="text-muted">3 min ago</small></div>
-								</div>
-								<div class="item"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" />
-									<div class="body"><strong>Message title <small class="text-muted">John Doe</small></strong>
-										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eligendi mollitia ratione fugiat earum qui sit vero nisi.</p>
-									</div>
-									<div class="footer text-right"><small class="text-muted">15 min ago</small></div>
-								</div>
-								<div class="item"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" />
-									<div class="body"><strong>Message title <small class="text-muted">John Doe</small></strong>
-										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eligendi mollitia ratione fugiat earum qui sit vero nisi pariatur eaque quasi reprehenderit possimus consequatur commodi cum quod, amet sed cupiditate?</p>
-									</div>
-									<div class="footer text-right"><small class="text-muted">3 hours ago</small></div>
-								</div>
-								<div class="item"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" />
-									<div class="body"><strong>Message title <small class="text-muted">John Doe</small></strong>
-										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eligendi mollitia ratione fugiat earum qui sit vero nisi pariatur eaque quasi reprehenderit possimus consequatur commodi cum quod, amet sed cupiditate?
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo officia, nulla ad quae. Possimus, necessitatibus excepturi ad vel aspernatur ipsam molestiae. Blanditiis assumenda, doloribus tenetur inventore,
-											earum fugiat! Ducimus, recusandae.</p>
-									</div>
-									<div class="footer text-right"><small class="text-muted">1 day ago</small></div>
+								<div class="card-body">
+									<h5 class="card-title">Special title treatment</h5>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="content flex align-center justify-space-around panels">
-					<div class="panel warning" style="max-height: 280px; max-width: 600px;">
-						<div class="header">Panel warning with scroll</div>
-						<div class="body">
-							<p>Duis ex nulla eu ex quis consectetur amet voluptate qui ipsum aliqua nisi commodo cupidatat. Reprehenderit aliqua sint magna ad eiusmod magna non esse. Ex tempor ex duis dolore commodo labore aliquip ad dolor nulla est. Ex
-								eiusmod labore deserunt velit ad consequat elit. Quis elit cupidatat culpa pariatur excepteur. Elit nulla nisi ut nulla cupidatat ipsum officia sint consectetur in laboris.</p>
-							<p>Voluptate anim in et esse. Voluptate ad est irure eiusmod sit enim pariatur adipisicing. Dolore officia nulla reprehenderit ipsum do aliquip incididunt eiusmod cupidatat exercitation consectetur incididunt.</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Special title treatment</h5>
+								<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+							</div>
 						</div>
-						<div class="footer">Panel footer</div>
-					</div>
-					<div class="panel danger">
-						<div class="header">Panel danger</div>
-						<div class="body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque.</p>
+						<div class="col-sm-4">
+							<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Special title treatment</h5>
+								<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+							</div>
 						</div>
-						<div class="footer">Panel footer</div>
-					</div>
-					<div class="panel outline">
-						<div class="header">Panel outline</div>
-						<div class="body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.</p>
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;">
+								<div class="card-header">
+									Featured
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Cras justo odio</li>
+									<li class="list-group-item">Dapibus ac facilisis in</li>
+									<li class="list-group-item">Vestibulum at eros</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Normal cards</legend>
-				<div class="content flex align-center justify-space-around panels">
-					<div class="card">
-						<div class="block">
-							<div class="title">Simple Card</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="https://images.unsplash.com/photo-1562101806-b8ebd0e33011?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
 						</div>
-						<div class="block"><small class="text-muted">Last updated 5 mins ago</small></div>
-					</div>
-					<div class="card">
-						<div class="ribbon right orange"> <span>-20%</span></div><img class="img" src="http://lorempixel.com/350/150/city" />
-						<div class="block">
-							<div class="title">Card with image</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.</p>
+						<div class="col-sm-4">
+							<div class="card border-primary mb-3" style="max-width: 18rem;">
+								<div class="card-header">Header</div>
+								<div class="card-body text-primary">
+									<h5 class="card-title">Primary card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</div>
+							</div>
 						</div>
-						<div class="block"><button class="button success">Checkout</button></div>
-					</div>
-					<div class="card">
-						<div class="ribbon left primary"> <span>Brand new</span></div><img class="img" src="http://placehold.it/350x150" />
-						<div class="block">
-							<div class="title">Card Title wih ribbon</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.</p>
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;">
+								<div class="card-body">
+									<h5 class="card-title">Special title treatment</h5>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
 						</div>
-						<div class="block text-right"><button class="button danger">DELETE</button><button class="button outline">Close</button></div>
 					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Cards in columns</legend>
-				<div class="content card-columns">
-					<div class="card">
-						<div class="block">
-							<div class="title">Small Card 1</div>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellendus architecto molestiae iure enim labore dolores similique, quia consequatur culpa, at cumque ad tenetur nemo vitae dolorem ipsum repellat optio! <a class="link"
-									href="https://twitter.com/Icebobcsi">@Icebobcsi</a></p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-					</div>
-					<div class="card">
-						<div class="block">
-							<div class="title">Small Card 2</div>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptate, neque voluptatibus mollitia aliquid, harum in laborum non amet cupiditate ea nisi necessitatibus quis! Earum architecto corporis molestiae nihil molestias?
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptate. Eaque nisi alias consectetur ipsum eveniet qui esse repellat voluptas mollitia, obcaecati corporis a modi officia, architecto commodi eius sint!
-								<a
-									class="link" href="https://twitter.com/Icebobcsi">@Icebobcsi</a>
-							</p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-					</div>
-					<div class="card">
-						<div class="block">
-							<div class="title">Small Card 3</div>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a class="link" href="https://twitter.com/Icebobcsi">@Icebobcsi</a></p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-					</div>
-					<div class="card"><img class="img" src="http://lorempixel.com/600/300/city" />
-						<div class="block">
-							<div class="title">Small Card 4</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa</p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-					</div>
-					<div class="card">
-						<div class="block">
-							<div class="title">Small Card 5</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa <a class="link" href="https://twitter.com/Icebobcsi">@Icebobcsi</a></p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-						<div class="block"><button class="button success">Checkout</button></div>
-					</div>
-					<div class="card">
-						<div class="block">
-							<div class="title">Small Card 6</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa </p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptatum quos autem magnam doloribus sunt. Atque quas accusamus repellat, odio dolore sapiente voluptatibus nemo numquam eum odit tempore, similique natus!
-								<a class="link" href="https://twitter.com/Icebobcsi">@Icebobcsi</a></p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-					</div>
-					<div class="card">
-						<div class="block">
-							<div class="title">Small Card 7</div>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa <a class="link" href="https://twitter.com/Icebobcsi">@Icebobcsi</a></p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-					</div>
-					<div class="card">
-						<div class="block">
-							<div class="title">Small Card 8</div>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa <a class="link" href="https://twitter.com/Icebobcsi">@Icebobcsi</a></p>
-						</div>
-						<div class="block"><small class="text-muted">08:45 PM - 14 Jun 2016</small></div>
-					</div>
-				</div>
-			</fieldset>
-		</section>
-		<section>
-			<h2><span class="number">10.</span><span class="text">Media</span></h2>
-			<fieldset>
-				<legend>Normal media</legend>
-				<div class="content list">
-					<div class="media">
-						<div class="media-left"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" /></div>
-						<div class="media-content"><strong>John Doe</strong><small class="text-muted">@johndoe - 31m ago</small>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.
-								</p>
-							<p>Elit ex id excepteur aliqua sint et culpa nisi laborum. Cupidatat anim aliqua nisi tempor nisi sint mollit non elit laboris consequat. Ut sint mollit voluptate quis sunt magna voluptate incididunt amet voluptate aute occaecat
-								nulla. Nostrud ut eiusmod duis consequat sunt proident in aute esse adipisicing cupidatat commodo consequat dolor. Irure minim consectetur est duis nulla aliqua fugiat culpa proident cupidatat elit magna. Dolor esse magna
-								pariatur sint adipisicing cupidatat veniam excepteur aliquip. Qui fugiat non eiusmod do sunt excepteur enim aliquip reprehenderit ullamco.<a class="link" href="#"> Read more...</a></p>
-							<div class="functions"><a href="#"><i class="fa fa-reply"></i></a><a href="#"><i class="fa fa-heart"></i></a><a href="#"><i class="fa fa-trash"></i></a></div>
-						</div>
-						<div class="media-right"><a class="close" href="#" title="Close"></a></div>
-					</div>
-					<div class="media primary">
-						<div class="media-left"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" /></div>
-						<div class="media-content"><strong>John Doe</strong><small class="text-muted">@johndoe - 31m ago</small>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.
-								<a class="link" href="#">Read more...</a></p>
-							<div class="functions"><a href="#"><i class="fa fa-reply"></i></a><a href="#"><i class="fa fa-heart"></i></a><a href="#"><i class="fa fa-trash"></i></a></div>
-						</div>
-						<div class="media-right"><a class="close" href="#" title="Close"></a></div>
-					</div>
-					<div class="media success">
-						<div class="media-left"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" /></div>
-						<div class="media-content"><strong>John Doe</strong><small class="text-muted">@johndoe - 31m ago</small>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.
-								<a class="link" href="#">Read more...</a></p>
-							<div class="functions"><a href="#"><i class="fa fa-reply"></i></a><a href="#"><i class="fa fa-heart"></i></a><a href="#"><i class="fa fa-trash"></i></a></div>
-						</div>
-						<div class="media-right"><a class="close" href="#" title="Close"></a></div>
-					</div>
-					<div class="media warning">
-						<div class="media-left"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" /></div>
-						<div class="media-content"><strong>John Doe</strong><small class="text-muted">@johndoe - 31m ago</small>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.
-								<a class="link" href="#">Read more...</a></p>
-							<div class="functions"><a href="#"><i class="fa fa-reply"></i></a><a href="#"><i class="fa fa-heart"></i></a><a href="#"><i class="fa fa-trash"></i></a></div>
-						</div>
-						<div class="media-right"><a class="close" href="#" title="Close"></a></div>
-					</div>
-					<div class="media danger">
-						<div class="media-left"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" /></div>
-						<div class="media-content"><strong>John Doe</strong><small class="text-muted">@johndoe - 31m ago</small>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.
-								<a class="link" href="#">Read more...</a></p>
-							<div class="functions"><a href="#"><i class="fa fa-reply"></i></a><a href="#"><i class="fa fa-heart"></i></a><a href="#"><i class="fa fa-trash"></i></a></div>
-						</div>
-						<div class="media-right"><a class="close" href="#" title="Close"></a></div>
-					</div>
-					<div class="media outline">
-						<div class="media-left"><img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" /></div>
-						<div class="media-content"><strong>John Doe</strong><small class="text-muted">@johndoe - 31m ago</small>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis, illo dolore facilis, in, nihil perspiciatis, et perferendis.
-								<a class="link" href="#">Read more...</a></p>
-							<div class="functions"><a href="#"><i class="fa fa-reply"></i></a><a href="#"><i class="fa fa-heart"></i></a><a href="#"><i class="fa fa-trash"></i></a></div>
-						</div>
-						<div class="media-right"><a class="close" href="#" title="Close"></a></div>
-					</div>
-				</div>
-			</fieldset>
-		</section>
+				</fieldset>
+			</div>
+		</div>
 	</div>												
 </template>
 
 <script>
 	export default {
-
 		methods: {
-			getTypographyInfo(elType) {
-				if (this.$el) {
-					let element = this.$el.querySelector(elType);
-					if (element) {
-						let style = window.getComputedStyle(element, null);
-						return style.fontFamily.split(",")[0] + " " + style.fontWeight + ", " + style.fontSize;
-					}
-				}
-			}
 		}
 	};
-
 </script>
 
 <style lang="scss" scoped>
-	// @import "../../../scss/themes/blurred/variables";
-
-	// .container {
-	// 	padding: 0 1rem;
-	// }
-
-	// section {
-	// 	&:not(:last-child) {
-	// 		margin-bottom: 40px;
-	// 	}
-
-	// 	> h2 {
-	// 		font-size: 1.5rem;
-	// 		margin-bottom: 20px;
-	// 		padding: 8px 10px;
-			
-	// 		background-color: rgba(darken($backgroundColor, 10%), 0.6);
-	// 		border: 1px solid darken($backgroundColor, 8%);
-	// 		border-radius: 8px;
-			
-	// 		.number {
-	// 			color: #888;
-	// 		}
-			
-	// 		.text {
-	// 			margin-left: 4px;
-	// 			font-weight: $fontLight;
-	// 			text-transform: uppercase;
-	// 		}
-			
-	// 		clear: both;
-			
-	// 	} // .title
-
-	// } //. section	
-
-	// .buttons {
-	// 	margin-bottom: 20px;
-	// }
-
-	// .list {
-	// 	> * {
-	// 		margin-bottom: 20px;
-	// 	}
-	// }
-
-	// .panels {
-	// 	align-items: flex-start;
-	// 	.panel, .card {
-	// 		margin: 20px;
-	// 	}
-
-	// 	.card {
-	// 		max-width: 350px;
-	// 	}
-	// }
-
-	// .colors {
-	// 	$boxSize: 150px;
-
-	// 	.box {
-	// 		width: $boxSize;
-	// 		height: $boxSize + 20px;
-
-	// 		border: 1px solid darken($backgroundColor, 10%);
-	// 		border-radius: 6px;
-
-	// 		margin: 5px 20px;
-	// 		padding: 2px;
-			
-	// 		.caption {
-	// 			float: left;
-	// 			width: 100%;
-	// 			text-align: center;
-	// 		}
-
-	// 		.main {
-	// 			float: left;
-	// 			width: 100%;
-	// 			height: $boxSize - 60px;
-	// 		} // .main
-			
-	// 		.light {
-	// 			float: left;
-	// 			width: 50%;
-	// 			height: 30px;
-				
-	// 		} // .light
-
-	// 		.dark {
-	// 			float: right;
-	// 			width: 50%;
-	// 			height: 30px;
-				
-	// 		} // .dark
-			
-	// 		.code {
-	// 			float: left;
-	// 			width: 100%;
-	// 			position: relative;
-	// 			margin-top: 5px;
-				
-	// 			&:after {
-	// 				position: absolute;
-	// 				top: 0; bottom: 0;
-	// 				left: 0; right: 0;
-	// 				margin: auto;
-	// 				width: 100%;
-	// 				text-align: center;
-	// 				font-family: "Consolas";
-	// 				color: White;
-	// 			}
-	// 		} // .code
-
-	// 		$colors: $color1, $color2, $color3, $color4, $color5;
-
-	// 		$colors-light: $color1-light, $color2-light, $color3-light, $color4-light, $color5-light;
-	// 		$colors-dark: $color1-dark, $color2-dark, $color3-dark, $color4-dark, $color5-dark;
-
-	// 		@for $i from 1 through 5 {
-
-	// 			$c: nth($colors, $i);
-
-	// 			&.box#{$i} { 
-	// 				.main { background-color: $c; } 
-	// 				.light { background-color: nth($colors-light, $i); }
-	// 				.dark { background-color: nth($colors-dark, $i); }
-	// 				.code:after {	content: "" + $c; }
-
-	// 			} // box
-				
-	// 		} // for
-			
-	// 	} // .box
-		
-	// } // .colors
 </style>
