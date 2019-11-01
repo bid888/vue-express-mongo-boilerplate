@@ -125,8 +125,6 @@ $ docker-compose up
 |   |       +---session
 |   |                   
 |   +---frontend
-|   +---images
-|   +---scss
 |                   
 +---data
 +---logs

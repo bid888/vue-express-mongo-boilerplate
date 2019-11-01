@@ -10,8 +10,6 @@
 |   |       +---session
 |   |                   
 |   +---frontend
-|   +---images
-|   +---scss
 |                   
 +---data
 +---logs
