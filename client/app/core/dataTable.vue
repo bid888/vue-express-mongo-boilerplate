@@ -1,14 +1,14 @@
 <template>
-	<table class="table stripped">
+	<table class="table table-striped">
 		<thead>
 			<tr>
-				<th class="selector" v-if="schema.multiSelect" width="20px" @click="selectAll"> <i class="fa fa-square-o"></i></th>
+				<th class="selector" v-if="schema.multiSelect" width="20px" @click="selectAll"> <i class="far fa-square"></i></th>
 				<th class="sortable" v-for="col in schema.columns" :width="col.width || 'auto'" @click="changeSort(col)" :class="{ sorted: col.field == order.field, 'desc': col.field == order.field &amp;&amp; order.direction == -1 }">{{ col.title }}</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr v-for="row in filteredOrderedRows" @click="select($event, row)" :class="getRowClasses(row)">
-				<td class="selector" v-if="schema.multiSelect" width="20px" @click.stop.prevent="select($event, row, true)"> <i class="fa fa-square-o"></i></td>
+				<td class="selector" v-if="schema.multiSelect" width="20px" @click.stop.prevent="select($event, row, true)"> <i class="far fa-square"></i></td>
 				<td v-for="col in schema.columns" :class="getCellClasses(row, col)"> <span v-html="getCellValue(row, col)"></span><span class="labels" v-if="col.labels != null"><div class="label" v-for="label in col.labels(row)" :class="'label-' + label.type">{{ label.caption }}</div></span></td>
 			</tr>
 		</tbody>

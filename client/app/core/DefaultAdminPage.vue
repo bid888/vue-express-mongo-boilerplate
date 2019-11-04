@@ -1,19 +1,24 @@
 <template>
 	<div class="container">
-		<h3 class="title">{{ schema.title }}</h3>
-		<div class="flex align-center justify-space-around">
-			<div class="left" v-if="enabledNew"><button class="button is-primary" @click="newModel"><i class="icon fa fa-plus"> </i>{{ schema.resources.addCaption || _("Add") }}</button></div>
-			<div class="right">{{ _("SelectedOfAll", { selected: selected.length, all: rows.length } ) }}</div>
-		</div>
-		<data-table :schema="schema.table" :rows="rows" :order="order" :search="search" :selected="selected" :select="select" :select-all="selectAll"></data-table>
-		<div class="form" v-if="model">
-			<vue-form-generator :schema="schema.form" :model="model" :options="options" :multiple="selected.length &gt; 1" ref="form" :is-new-model="isNewModel"></vue-form-generator>
-			<div class="errors text-center">
-				<div class="alert alert-danger" v-for="(item, index) in validationErrors" :key="index">{{ item.field.label }}: <strong>{{ item.error }}</strong></div>
-			</div>
-			<div class="buttons flex justify-space-around"><button class="button primary" @click="saveModel" :disabled="!enabledSave"><i class="icon fa fa-save"> </i>{{ schema.resources.saveCaption || _("Save") }}</button><button class="button outline" @click="cloneModel" :disabled="!enabledClone"><i class="icon fa fa-copy"> </i>{{ schema.resources.cloneCaption || _("Clone") }}</button>
-				<button
-					class="button danger" @click="deleteModel" :disabled="!enabledDelete"><i class="icon fa fa-trash"> </i>{{ schema.resources.deleteCaption || _("Delete") }}</button>
+		<div class="row py-3">
+			<div class="col">
+				<h3 class="title py-2">{{ schema.title }}</h3>
+				<div>
+					<div class="float-left" v-if="enabledNew"><button class="btn btn-primary" @click="newModel"><i class="icon fa fa-plus"> </i>{{ schema.resources.addCaption || _("Add") }}</button></div>
+					<div class="float-right">{{ _("SelectedOfAll", { selected: selected.length, all: rows.length } ) }}</div>
+				</div>
+				<data-table :schema="schema.table" :rows="rows" :order="order" :search="search" :selected="selected" :select="select" :select-all="selectAll"></data-table>
+				<div class="form" v-if="model">
+					<vue-form-generator :schema="schema.form" :model="model" :options="options" :multiple="selected.length &gt; 1" ref="form" :is-new-model="isNewModel"></vue-form-generator>
+					<div class="errors text-center">
+						<div class="alert alert-danger" v-for="(item, index) in validationErrors" :key="index">{{ item.field.label }}: <strong>{{ item.error }}</strong></div>
+					</div>
+					<div class="buttons flex justify-space-around">
+						<button class="btn btn-primary" @click="saveModel" :disabled="!enabledSave"><i class="icon fa fa-save"> </i>{{ schema.resources.saveCaption || _("Save") }}</button>
+						<button class="btn btn-info" @click="cloneModel" :disabled="!enabledClone"><i class="icon fa fa-copy"> </i>{{ schema.resources.cloneCaption || _("Clone") }}</button>
+						<button	class="btn btn-danger" @click="deleteModel" :disabled="!enabledDelete"><i class="icon fa fa-trash"> </i>{{ schema.resources.deleteCaption || _("Delete") }}</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -23,9 +28,7 @@
 	import Vue from "vue";
 	import { schema as schemaUtils } from "vue-form-generator";
 	import DataTable from "./dataTable.vue";
-
 	import { each, find, cloneDeep, isFunction } from "lodash";
-
 	import { mapGetters, mapActions } from "vuex";
 
 	export default {
@@ -204,22 +207,4 @@
 </script>
 
 <style lang="scss" scoped>
-	/*//@import "../../scss/common/mixins";
-
-	.container {
-		padding: 1rem;
-	}
-
-	.form {
-		margin: 1rem 0;
-
-		//@include bgTranslucentDark(0.2);
-		border-radius: 8px;
-
-		.buttons {
-			max-width: 400px;
-			padding: 0.5em;
-		}
-
-	}*/
 </style>
