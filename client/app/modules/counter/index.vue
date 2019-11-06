@@ -1,7 +1,17 @@
 <template>
-	<div class="container">
-		<h2 class="title">{{ "Demo" | i18n }}</h2>
-		<h3>{{ count }}</h3><button class="button success" @click="inc"> <span class="icon"><i class="fa fa-arrow-up"> </i></span><span>{{ "Increment" | i18n }}</span></button><br/><br/><button class="button warning" @click="dec"> <span><i class="fa fa-arrow-up"> </i></span><span>{{ "Decrement" | i18n }}</span></button>
+	<div class="container h-100">
+		<div class="row py-4">
+			<div class="col">
+				<h1 class="title py-2">{{ "Demo" | i18n }}</h1>
+				<h3 class="py-2">Counter: {{ count }}</h3>
+				<div class="py-2">
+					<button type="button" class="btn btn-primary" @click="inc"><span class="icon"><i class="fas fa-arrow-up"></i></span><span>{{ " Increment" | i18n }}</span>
+					</button>
+					<button type="button" class="btn btn-primary" @click="dec"><span><i class="fas fa-arrow-down"></i></span><span>{{ " Decrement" | i18n }}</span>
+					</button>
+				</div>
+			</div>
+		</div>	
 	</div>
 </template>
 

@@ -191,7 +191,7 @@ function initI18N(app) {
 function initViewEngine(app) {
 	// Set view folder
 	app.set("views", path.join(serverFolder, "views"));
-	app.set("view engine", "pug");
+	app.set("view engine", "ejs");
 
 	// Environment dependent middleware
 	if (config.isDevMode()) {

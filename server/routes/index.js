@@ -13,7 +13,7 @@ module.exports = function(app, db) {
 				user: req.user
 			});
 		else
-			res.render("index");
+			res.render("account/signup");
 	});
 
 	// Handle health check routes

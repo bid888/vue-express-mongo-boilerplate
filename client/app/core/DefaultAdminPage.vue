@@ -4,7 +4,10 @@
 			<div class="col">
 				<h3 class="title py-2">{{ schema.title }}</h3>
 				<div>
-					<div class="float-left" v-if="enabledNew"><button class="btn btn-primary" @click="newModel"><i class="icon fa fa-plus"> </i>{{ schema.resources.addCaption || _("Add") }}</button></div>
+					<div class="float-left" v-if="enabledNew">
+						<button class="btn btn-primary" @click="newModel"><i class="icon fa fa-plus"></i>{{ schema.resources.addCaption || _("Add") }}
+						</button>
+					</div>
 					<div class="float-right">{{ _("SelectedOfAll", { selected: selected.length, all: rows.length } ) }}</div>
 				</div>
 				<data-table :schema="schema.table" :rows="rows" :order="order" :search="search" :selected="selected" :select="select" :select-all="selectAll"></data-table>
