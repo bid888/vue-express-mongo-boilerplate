@@ -94,6 +94,7 @@ module.exports = function(app, db) {
 		let passwordless = req.body.passwordless === true;
 		if (!passwordless) {
 			req.assert("password", req.t("PasswordCannotBeEmpty")).notEmpty();
+			req.assert("confirm", req.t("PasswordNotMatched")).equals(req.body.password);
 			req.assert("password", req.t("PasswordTooShort")).len(6);
 		}
 
@@ -105,7 +106,6 @@ module.exports = function(app, db) {
 		}
 
 		async.waterfall([
-
 			function generateVerificationToken(done) {
 				if (config.features.verificationRequired) {
 					crypto.randomBytes(25, function(err, buf) {

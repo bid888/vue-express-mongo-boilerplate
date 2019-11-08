@@ -1,0 +1,54 @@
+<% include ../layout %>
+<% include ../styles %>
+
+<main>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <header class="card-header">
+                        <a href="/login" class="float-right btn btn-outline-primary mt-1">Sign in</a>
+                        <h4 class="card-title mt-2">Sign in</h4>
+                    </header>
+                    <article class="card-body">
+                        <form action="/auth/local" method="POST">
+                            <input type="hidden" name="_csrf", value=_csrf>
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="name">Username or email</label>
+                                    <input type="text" name="username" class="form-control" id="username" autofocus="autofocus" required="required" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input class="form-control" name="password" id='password' type="password">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                            </div>
+                        </form>
+
+                        <%if (true) { %> 
+                            <div class="forgot">
+								<a href="/forgot">Forgot your password?</a>
+							</div>
+                        <% } %>
+        
+                        <%if (socialAuth) { %>
+                            <div class="row justify-content-center">
+                                <a class="group facebook py-3 px-2" href="/auth/facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a class="group google py-3 px-2" href="/auth/google"><i class="fab fa-google"></i></a>
+                                <a class="group github py-3 px-2" href="/auth/github"><i class="fab fa-github"></i></a>
+                            </div>
+                        <% } %>
+                    </article>
+					<% if (features.disableSignUp !== true) { %>
+						<div class="border-top card-body text-center">Don't have an account? <a href="/signup">Sign up</a></div>
+					<% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+					

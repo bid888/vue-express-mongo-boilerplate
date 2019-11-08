@@ -13,7 +13,9 @@ module.exports = function(app, db) {
 				user: req.user
 			});
 		else
-			res.render("account/signup");
+			res.render("account/signup", {
+				socialAuth: false //TODO remove this
+			});
 	});
 
 	// Handle health check routes
