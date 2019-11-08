@@ -1,38 +1,99 @@
 <template>
 	<div class="container">
-		<h2 class="title">{{ _('Posts') }}</h2>
-		<div class="header flex row justify-space-between">
-			<div class="group sort"><a class="link" @click="changeSort('-votes')" :class="{ active: sort == '-votes' }">{{ _("Hot") }}</a><a class="link" @click="changeSort('-views')" :class="{ active: sort == '-views' }">{{ _("MostViewed") }}</a><a class="link" @click="changeSort('-createdAt')"
-					:class="{ active: sort == '-createdAt' }">{{ _("New") }}</a></div><button class="button primary" @click="newPost"><span class="icon"><i class="fa fa-plus"></i></span><span>{{ _("NewPost") }}</span></button>
-			<div class="group filter"><a class="link" @click="changeViewMode('all')" :class="{ active: viewMode == 'all' }">{{ _("AllPosts") }}</a><a class="link" @click="changeViewMode('my')" :class="{ active: viewMode == 'my' }">{{ _("MyPosts") }}</a></div>
+		<div class="row">
+			<div class="col">
+				<h2 class="title">{{ _('Posts') }}</h2>
+			</div>
 		</div>
-		<div class="postForm" v-if="showForm">
-			<vue-form-generator :schema="schema" :model="model" :options="{}" :multiple="false" ref="form" :is-new-model="isNewPost"></vue-form-generator>
-			<div class="group buttons"><button class="button primary" @click="savePost">{{ _("Save") }}</button><button class="button" @click="cancelPost">{{ _("Cancel") }}</button></div>
+		<div class="row py-3">
+			<div class="col">	
+				<div class="group sort">
+					<a class="btn btn-light" role="button" @click="changeSort('-votes')" :class="{ active: sort == '-votes' }">{{ _("Hot") }}</a>
+					<a class="btn btn-light" role="button" @click="changeSort('-views')" :class="{ active: sort == '-views' }">{{ _("MostViewed") }}</a>
+					<a class="btn btn-light" role="button" @click="changeSort('-createdAt')" :class="{ active: sort == '-createdAt' }">{{ _("New") }}</a>
+				</div>
+			</div>
+			<div class="col d-flex justify-content-center">
+				<button class="btn btn-light" @click="newPost">
+					<span class="icon"><i class="fas fa-plus"></i></span>
+					<span>{{ _("NewPost") }}</span>
+				</button>	
+			</div>
+			<div class="col d-flex justify-content-end">
+				<a class="btn btn-light" @click="changeViewMode('all')" :class="{ active: viewMode == 'all' }">{{ _("AllPosts") }}</a>
+				<a class="btn btn-light" @click="changeViewMode('my')" :class="{ active: viewMode == 'my' }">{{ _("MyPosts") }}</a>
+			</div>
 		</div>
-		<transition-group class="posts" name="post" tag="ul">
-			<li v-for="post of posts" :key="post.code">
-				<article class="media">
-					<div class="media-left"><img class="avatar" :src="post.author.avatar" />
-						<div class="votes" :class="{ voted: iVoted(post) }">
-							<div class="count text-center">{{ post.votes }}</div>
-							<div class="thumb text-center" @click="toggleVote(post)"><i class="fa fa-thumbs-o-up"></i></div>
+		
+		<div class="row">
+			<div class="col">
+				<div class="postForm" v-if="showForm">
+					<vue-form-generator :schema="schema" :model="model" :options="{}" :multiple="false" ref="form" :is-new-model="isNewPost"></vue-form-generator>
+					<div class="group buttons">
+						<button class="btn btn-primary" @click="savePost">{{ _("Save") }}</button>
+						<button class="btn btn-secondary" @click="cancelPost">{{ _("Cancel") }}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<transition-group class="posts" name="post" tag="div">
+					<div v-for="post of posts" :key="post.code">
+						<div class="card">
+							<h5 class="card-header">{{ post.title }}</h5>
+							<div class="row">
+								<div class="col-1 py-3 px-4">
+									<div class="media-left"><img class="avatar" :src="post.author.avatar" />
+										<div class="votes" :class="{ voted: iVoted(post) }">
+											<div class="count text-center">{{ post.votes }}</div>
+											<div class="thumb text-center" @click="toggleVote(post)"><i class="fas fa-thumbs-up"></i></div>
+										</div>
+									</div>			
+								</div>
+								<div class="col">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<p class="content" v-html="markdown(post.content)"></p>
+												<hr/>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<div class="float-left"><a :title="_('EditPost')" @click="editPost(post)">
+													<i class="fas fa-edit"></i></a><a :title="_('DeletePost')" @click="deletePost(post)">
+													<i class="fas fa-trash"></i></a>
+												</div>
+												<div class="flex-row" :title="_('Voters')">
+													<template v-for="voter in lastVoters(post)">
+														<img :src="voter.avatar" :title="voter.fullName + ' (' + voter.username + ')'"/>
+													</template>
+												</div>
+												
+											</div>
+											<div class="col">
+												<div class="right text-right">
+													<template v-if="post.editedAt">
+														<small class="text-muted">{{ editedAgo(post) }}</small><br/>
+													</template>
+													<small class="text-muted">{{ createdAgo(post) }}</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="media-content">
-						<h3>{{ post.title }}</h3>
-						<p class="content" v-html="markdown(post.content)"></p>
-						<hr class="full" />
-						<div class="row">
-							<div class="functions left"><a :title="_('EditPost')" @click="editPost(post)"><i class="fa fa-pencil"></i></a><a :title="_('DeletePost')" @click="deletePost(post)"><i class="fa fa-trash"></i></a></div>
-							<div class="voters left" :title="_('Voters')"><template v-for="voter in lastVoters(post)"><img :src="voter.avatar" :title="voter.fullName + ' (' + voter.username + ')'"/></template></div>
-							<div class="right text-right"><template v-if="post.editedAt"><small class="text-muted">{{ editedAgo(post) }}</small><br/></template><small class="text-muted">{{ createdAgo(post) }}</small></div>
-						</div>
-					</div>
-				</article>
-			</li>
-		</transition-group>
-		<div class="loadMore text-center" v-if="hasMore"><button class="button outline" @click="loadMoreRows" :class="{ 'loading': fetching }">{{ _("LoadMore") }}</button></div>
+				</transition-group>
+			</div>
+		</div>
+
+		<div class="loadMore text-center" v-if="hasMore">
+			<button class="btn btn-primary" @click="loadMoreRows" :class="{ 'loading': fetching }">{{ _("LoadMore") }}</button>
+		</div>
 		<div class="noMore text-center" v-if="!hasMore"><span class="text-muted">You reached the end of the list.</span></div>
 		<hr/>
 	</div>
@@ -44,7 +105,6 @@
 	import toast from "../../core/toastr";
 	import { cloneDeep } from "lodash";
 	import { validators, schema as schemaUtils } from "vue-form-generator";
-
 	import { mapGetters, mapActions } from "vuex";
 
 	export default {
@@ -257,120 +317,4 @@
 </script>
 
 <style lang="scss" scoped>
-	/*
-	//@import "../../../scss/themes/blurred/variables";
-	//@import "../../../scss/common/mixins";
-
-	.container {
-		padding-bottom: 1rem;
-	}
-
-	.header {
-		margin: 1rem;
-	}
-
-	.postForm {
-
-		//@include bgTranslucentDark(0.2);
-
-		margin: 1rem;
-
-		.buttons {
-			padding: 0.5em;
-		}
-
-	} // .postForm
-
-	ul.posts {
-		margin: 1rem 3rem;
-		padding: 0;
-		list-style: none;
-
-		li {
-			position: relative;
-			margin: 1.0rem 0;
-			padding: 0.5rem 0.5rem;
-			font-size: 1.1rem;
-
-			.media {
-				background-color: rgba($color1, 0.5);
-				transition: background-color .2s ease;
-				&:hover {
-					background-color: rgba($color1, 0.8);
-				}
-			}
-
-			.votes {
-
-				.count {
-					font-weight: 300;
-					font-size: 3.0em;
-					margin: 1.5rem 0 2.0rem 0;
-				}
-
-				.thumb {
-					cursor: pointer;
-					font-size: 2.0em;
-
-					&:hover {
-						color: $headerTextColor;
-					}
-
-				}
-
-				&.voted {
-					.thumb {
-						color: $successColor;
-
-						&:hover {
-							color: lighten($successColor, 10%);
-						}
-					}
-				}
-
-			} // .votes
-
-			.voters {
-				margin: 0 1em;
-				img {
-					margin: 0 0.4em;
-					width: 32px;
-					height: 32px;
-					border-radius: $avatarRadius;
-				}
-			}
-
-			.media-content {
-				overflow-x: auto;
-
-				h3 {
-					margin: 0 0 0.5em 0;
-				}
-
-			}
-		}
-	}
-
-
-	/* Transition styles */
-/*
-	.post-transition {
-		transition: opacity .5s ease;
-	}
-
-	.post-enter {
-		opacity: 0;
-	}
-
-	.post-leave {
-		opacity: 0;
-		position: absolute !important;
-	}
-*/
-	/* .post-move {
-		transition: transform .5s cubic-bezier(.55,0,.1,1);
-	} */
-
-
-
 </style>
