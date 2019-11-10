@@ -6,20 +6,20 @@
 			</div>
 		</div>
 		<div class="row py-3">
-			<div class="col">	
-				<div class="group sort">
+			<div class="col-5">	
+				<div>
 					<a class="btn btn-light" role="button" @click="changeSort('-votes')" :class="{ active: sort == '-votes' }">{{ _("Hot") }}</a>
 					<a class="btn btn-light" role="button" @click="changeSort('-views')" :class="{ active: sort == '-views' }">{{ _("MostViewed") }}</a>
 					<a class="btn btn-light" role="button" @click="changeSort('-createdAt')" :class="{ active: sort == '-createdAt' }">{{ _("New") }}</a>
 				</div>
 			</div>
-			<div class="col d-flex justify-content-center">
+			<div class="col-4">
 				<button class="btn btn-light" @click="newPost">
-					<span class="icon"><i class="fas fa-plus"></i></span>
+					<span class="btn btn-light" role="button"><i class="fas fa-plus"></i></span>
 					<span>{{ _("NewPost") }}</span>
 				</button>	
 			</div>
-			<div class="col d-flex justify-content-end">
+			<div class="col-3">
 				<a class="btn btn-light" @click="changeViewMode('all')" :class="{ active: viewMode == 'all' }">{{ _("AllPosts") }}</a>
 				<a class="btn btn-light" @click="changeViewMode('my')" :class="{ active: viewMode == 'my' }">{{ _("MyPosts") }}</a>
 			</div>
@@ -40,7 +40,7 @@
 		<div class="row">
 			<div class="col">
 				<transition-group class="posts" name="post" tag="div">
-					<div v-for="post of posts" :key="post.code">
+					<div class="my-4" v-for="post of posts" :key="post.code">
 						<div class="card">
 							<h5 class="card-header">{{ post.title }}</h5>
 							<div class="row">
@@ -62,9 +62,13 @@
 										</div>
 										<div class="row">
 											<div class="col">
-												<div class="float-left"><a :title="_('EditPost')" @click="editPost(post)">
-													<i class="fas fa-edit"></i></a><a :title="_('DeletePost')" @click="deletePost(post)">
-													<i class="fas fa-trash"></i></a>
+												<div class="float-left">
+													<a class="btn btn-light" role="button" :title="_('EditPost')" @click="editPost(post)">
+														<i class="fas fa-edit"></i>
+													</a>
+													<a class="btn btn-light" role="button" :title="_('DeletePost')" @click="deletePost(post)">
+														<i class="fas fa-trash"></i>
+													</a>
 												</div>
 												<div class="flex-row" :title="_('Voters')">
 													<template v-for="voter in lastVoters(post)">
