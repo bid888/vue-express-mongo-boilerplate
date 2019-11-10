@@ -7,15 +7,7 @@
 ![VueJS 2](https://img.shields.io/badge/vuejs-2.3.x-green.svg)
 ![Webpack 4](https://img.shields.io/badge/webpack-4.17.x-green.svg)
 
-This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB. It is NOT an out-of-box project. 
-I make it in order to create an up-to-date starter repo which contains all important functions (user signup, login, oauth, profile, ...etc) except the business-logic. So when neccessary I can create a new webapp and only need to develop the business logic.
-
-*This is just my personal boilerplate, it may or may not be a good fit for your project(s).*
-Inspired by [dstroot/skeleton](https://github.com/dstroot/skeleton) and [sahat/hackathon-starter](https://github.com/sahat/hackathon-starter)
-
-**If you like my work, please [donate](https://www.paypal.me/meregnorbert). Thank you!**
-
-### [Live Demo](http://vemapp.moleculer.services/) (login: test/test1234 or sign-up)
+This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB nsdrf on [icebob/vue-express-mongo-boilerplate](https://github.com/icebob/vue-express-mongo-boilerplate). The theme has been changed and updated to bootstrap 4. Also, pug templates have been removed. 
 
 ## Features
 
@@ -39,7 +31,6 @@ Inspired by [dstroot/skeleton](https://github.com/dstroot/skeleton) and [sahat/h
 * [x] [axios](https://github.com/mzabriskie/axios)
 * [x] **[socket.io](https://github.com/socketio/socket.io) connection with namespaces & authorization**
 * [x] [vue-websocket](https://github.com/icebob/vue-websocket)
-* [x] [Jade](https://github.com/pugjs/pug)
 * [x] **[Webpack 4](https://github.com/webpack/webpack)**
 * [x] [SCSS](http://sass-lang.com/)
 * [x] [PostCSS](https://github.com/postcss/postcss) with precss and autoprefixer
@@ -101,15 +92,11 @@ $ docker-compose up
 
 ### Login screen
 
-![Login screen](https://cloud.githubusercontent.com/assets/306521/20032026/e2241716-a381-11e6-8ec2-4e0263308762.png)
+![Login screen](https://github.com/bid888/vue-express-mongo-boilerplate/blob/master/img/login.png)
 
 ### Index page after login
 
-![Index page](https://cloud.githubusercontent.com/assets/306521/20032034/e401f10c-a381-11e6-86bb-5325671d32bf.png)
-
-### Devices page
-
-![Devices module](https://cloud.githubusercontent.com/assets/306521/20032035/e5e7ec60-a381-11e6-9481-e1db97126797.png)
+![Index page](https://github.com/bid888/vue-express-mongo-boilerplate/blob/master/img/main.png)
 
 ## Directory structure
 ```txt
@@ -254,9 +241,3 @@ These are the instructions for Twitter:
 ## License
 
 vue-express-mongo-boilerplate is available under the [MIT license](https://tldrlegal.com/license/mit-license).
-
-## Contact
-
-Copyright (C) 2016 Icebob
-
-[![@icebob](https://img.shields.io/badge/github-icebob-green.svg)](https://github.com/icebob) [![@icebob](https://img.shields.io/badge/twitter-Icebobcsi-blue.svg)](https://twitter.com/Icebobcsi)
