@@ -46,11 +46,7 @@ module.exports = merge(baseWpConfig, {
 						]
 					}
 				}
-			}, {
-				test: /\.pug$/,
-				loader: 'pug-plain-loader'
 			}
-		]
 	},
 	optimization: {
 		splitChunks: {

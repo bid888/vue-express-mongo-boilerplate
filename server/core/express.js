@@ -184,7 +184,7 @@ function initI18N(app) {
 }
 
 /**
- * Initialize view engine (pug)
+ * Initialize view engine (ejs)
  *
  * @param {any} app
  */
