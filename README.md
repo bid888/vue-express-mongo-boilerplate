@@ -90,13 +90,17 @@ $ docker-compose up
 
 ## Screenshots
 
+### Signup screen
+
+![Signup screen](https://github.com/bid888/bootstrap-vue-express-mongo-boilerplate/blob/master/img/signup.png?raw=true)
+
 ### Login screen
 
-![Login screen](https://github.com/bid888/vue-express-mongo-boilerplate/blob/master/img/login.png)
+![Login screen](https://github.com/bid888/bootstrap-vue-express-mongo-boilerplate/blob/master/img/signin.png?raw=true)
 
 ### Index page after login
 
-![Index page](https://github.com/bid888/vue-express-mongo-boilerplate/blob/master/img/main.png)
+![Index page](https://github.com/bid888/bootstrap-vue-express-mongo-boilerplate/blob/master/img/main.png?raw=true)
 
 ## Directory structure
 ```txt
