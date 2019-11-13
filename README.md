@@ -31,6 +31,7 @@ This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB
 * [x] [vue-websocket](https://github.com/icebob/vue-websocket)
 * [x] **[Webpack 4](https://github.com/webpack/webpack)**
 * [x] [SCSS](http://sass-lang.com/)
+* [x] **[Bootstrap 4](https://github.com/twbs/bootstrap)**
 * [x] [PostCSS](https://github.com/postcss/postcss) with precss and autoprefixer
 * [x] [Babel](https://babeljs.io/)
 * [x] [Passwordless](https://www.sitepoint.com/passwordless-authentication-works/) mode
