@@ -60,6 +60,14 @@ patch:
         patched: '2017-09-28T02:19:03.719Z'
     - express-status-monitor > socket.io > socket.io-adapter > socket.io-parser > debug:
         patched: '2017-09-28T02:19:03.719Z'
+    - socket.io > socket.io-adapter > debug:
+        patched: '2019-11-13T05:48:04.479Z'
+    - nodemailer-mailgun-transport > mailgun-js > proxy-agent > pac-proxy-agent > get-uri > debug:
+        patched: '2019-11-13T05:48:04.479Z'
+    - express-status-monitor > debug:
+        patched: '2019-11-13T05:48:04.479Z'
+    - express-status-monitor > socket.io > socket.io-adapter > debug:
+        patched: '2019-11-13T05:48:04.479Z'
   'npm:hoek:20180212':
     - node-sass > node-gyp > request > hawk > hoek:
         patched: '2018-06-21T02:58:21.837Z'
@@ -69,6 +77,30 @@ patch:
         patched: '2018-06-21T02:58:21.837Z'
     - node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
         patched: '2018-06-21T02:58:21.837Z'
+    - nodemailer-sendgrid-transport > sendgrid > request > hawk > sntp > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - nodemailer-sendgrid-transport > sendgrid > request > hawk > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-loggly-bulk > node-loggly-bulk > request > hawk > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - nodemailer-sendgrid-transport > sendgrid > request > hawk > boom > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > hawk > boom > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-loggly-bulk > node-loggly-bulk > request > hawk > boom > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - nodemailer-sendgrid-transport > sendgrid > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > hawk > sntp > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-loggly-bulk > node-loggly-bulk > request > hawk > sntp > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-loggly-bulk > node-loggly-bulk > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > hawk > hoek:
+        patched: '2019-11-13T05:48:04.479Z'
   SNYK-JS-HTTPSPROXYAGENT-469131:
     - snyk > proxy-agent > https-proxy-agent:
         patched: '2019-10-03T22:41:48.298Z'
@@ -78,3 +110,48 @@ patch:
         patched: '2019-10-03T22:41:48.298Z'
     - nodemailer-mailgun-transport > mailgun-js > proxy-agent > pac-proxy-agent > https-proxy-agent:
         patched: '2019-10-03T22:41:48.298Z'
+  'npm:extend:20180424':
+    - winston-logsene > logsene-js > extend:
+        patched: '2019-11-13T05:48:04.479Z'
+    - mongoose-auto-increment > extend:
+        patched: '2019-11-13T05:48:04.479Z'
+    - nodemailer-sendgrid-transport > sendgrid > request > extend:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > extend:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-loggly-bulk > node-loggly-bulk > request > extend:
+        patched: '2019-11-13T05:48:04.479Z'
+    - nodemailer-mailgun-transport > mailgun-js > proxy-agent > pac-proxy-agent > get-uri > extend:
+        patched: '2019-11-13T05:48:04.479Z'
+  'npm:lodash:20180130':
+    - cli-table2 > lodash:
+        patched: '2019-11-13T05:48:04.479Z'
+    - nodemailer-sendgrid-transport > sendgrid > lodash:
+        patched: '2019-11-13T05:48:04.479Z'
+  'npm:mime:20170907':
+    - nodemailer-sendgrid-transport > sendgrid > mime:
+        patched: '2019-11-13T05:48:04.479Z'
+  'npm:qs:20170213':
+    - nodemailer-sendgrid-transport > sendgrid > request > qs:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > qs:
+        patched: '2019-11-13T05:48:04.479Z'
+  'npm:stringstream:20180511':
+    - nodemailer-sendgrid-transport > sendgrid > request > stringstream:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > stringstream:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-loggly-bulk > node-loggly-bulk > request > stringstream:
+        patched: '2019-11-13T05:48:04.479Z'
+  'npm:tough-cookie:20170905':
+    - nodemailer-sendgrid-transport > sendgrid > request > tough-cookie:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > tough-cookie:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-loggly-bulk > node-loggly-bulk > request > tough-cookie:
+        patched: '2019-11-13T05:48:04.479Z'
+  'npm:tunnel-agent:20170305':
+    - nodemailer-sendgrid-transport > sendgrid > request > tunnel-agent:
+        patched: '2019-11-13T05:48:04.479Z'
+    - winston-logsene > logsene-js > request > tunnel-agent:
+        patched: '2019-11-13T05:48:04.479Z'
