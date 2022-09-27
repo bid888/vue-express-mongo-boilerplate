@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.25.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -155,3 +155,14 @@ patch:
         patched: '2019-11-13T05:48:04.479Z'
     - winston-logsene > logsene-js > request > tunnel-agent:
         patched: '2019-11-13T05:48:04.479Z'
+  SNYK-JS-LODASH-567746:
+    - nodemailer-html-to-text > html-to-text > lodash:
+        patched: '2022-09-27T15:50:14.921Z'
+    - async > lodash:
+        patched: '2022-09-27T15:50:14.921Z'
+    - winston-graylog2 > lodash:
+        patched: '2022-09-27T15:50:14.921Z'
+    - winston > async > lodash:
+        patched: '2022-09-27T15:50:14.921Z'
+    - nodemailer-mailgun-transport > mailgun-js > async > lodash:
+        patched: '2022-09-27T15:50:14.921Z'
